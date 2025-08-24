@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Projeto Urânia</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #00f7ff;
+      font-family:  Sans-Serif;
+      padding: 20px;
+      margin: 0;
+      
+      
+}
+
+.container {
+      max-width: 90%;
+      margin: auto;
+      border: 2px solid #00f7ff;
+      border-radius: 10px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.8);
+      box-shadow: 0 0 10px #00f7ff;
+}
+
+    #mensagem {
+      white-space: pre-wrap;
+      overflow: hidden;
+      border-right: 2px solid #00f7ff;
+      animation: blink 0.7s infinite;
+}
+
+    @keyframes blink {
+      0%, 100% { border-color: transparent;}
+      50% { border-color: #00f7ff;}
+}
+
+img{
+  text-align:center;
+  border-radius:5%;
+animation: blink 0.7s infinite;
+}
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="mensagem"></div>
+  </div>
+
+  <script>
+    const texto = `INICIANDO SISTEMA: PROJETO URÂNIA...
+    
+DATA DE ATIVAÇÃO: 14.11.2025
+HORA:
+CRIADOR: JOSIAS MANUEL
+PARA:URÃNIA JOSÉ
+
+
+hoje dia 12 de Maio,dia de escola...
+
+URÂNIA,se estiver vendo essa msg é porque algo entre nos mudou...eu sinto que lá pra frente sera diferente,por isso essa msg sera enviada 3 meses antes do teu aniversario as 00h00,não por mim...mas pela tecnologia que criei para voce neste mes de Maio.
+
+Sei que ficaras chateada...e perguntaras porque não disse antes mas criei isso no caso de uma despedida inoportuna da minha parte,se é que não se evita o inevitavel.
+
+essa luta para passar de ano...deixa minha atenção em varios lugares,mas nunca me esqueço de ti. 
+
+por isso neste 12 de Maio digo:amo voce...
+apesar da data em que veras esta mensagem,se for quando acontecer o inpensavel,me desculpa mas esta é a mensagem.
+
+hoje estas linda com a roupa que estas a usar,independentemente do momento guarda essa memsagem,se quiseres,mas a decisão é tua. 
+
+Tu estás num bom caminho,em todas as áreas,principalmente na escola,és uma excelente delegada e aluna,vejo que estão a cuidar bem ti...continua que eu confio em ti,estou até triste por escrever isto porque não sei se neste dia que abriste mensagem já estou diferente
+
+Amo-te mil milhões...
+
+É uma promessa,não uma simples frase,e significa que "serei o mesmo com voce depois do que espero que aconteça,ainda guardarei suas fotos mas não direi nada para ti e vou querer esperar voce do mesmo jeito que espero"
+
+Janeth...tens uma tia excelente tia
+E tia Joana,tens uma linda filha,apesar de
+nunca ter visto a senhora pessoalmente.
+
+Vou repetir novamente...eu te Amo-te
+novamente eu te amo 
+novamente eu te amo
+novamente eu te amo
+novamente eu te amo
+novamente eu te amo 
+novamente eu te amo
+novamente eu te amo
+novamente eu te amo
+
+Agora vou dormir porque amanha vou a escola e tenho aula de historia e não quero dormir na aula de historia.
+
+se cuida que eu vou estar te olhando
+Edith...não me deixes mal
+
+Beijos Ury
+
+até amanhã
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+TERMINANDO MENSAGEM...
+ASSINATURA: O TIMIDO`;
+
+    let i = 0;
+    const velocidade = 20;
+
+    function digitar() {
+      if (i < texto.length) {
+        document.getElementById("mensagem").innerHTML += texto.charAt(i);
+        i++;
+        setTimeout(digitar, velocidade);
+}
+}
+
+    digitar();
+  </script>
+
+</body>
+</html>
